@@ -1,0 +1,45 @@
+html{
+    height:100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding:20px;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+.keys{
+    display: flex;
+}
+
+#display{
+    display: flex;
+}
+
+#numbers{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+#operators{
+    display: flex;
+    flex-direction: column;
+}
+
+
