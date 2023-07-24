@@ -3,16 +3,13 @@ let add =(num1, num2) => {
 }
 
 let subtract =(num1, num2) => {
-    console.log(num1 - num2);
-}
+    display.innerText+=(num1 - num2);}
 
 let multiply =(num1, num2) => {
-    console.log(num1 * num2);
-}
+    display.innerText+=(num1 * num2);}
 
 let divide =(num1, num2) => {
-    console.log(num1 / num2);
-}
+    display.innerText+=(num1 / num2);}
 
 let operate = (num1, operator, num2) => {
     switch(operator){
@@ -53,8 +50,19 @@ buttons.forEach(button => {
             let temp = displayValue.slice(0,-1);
             if(displayValue.includes('+')){
                 let nums = temp.split('+');
-                console.log(nums);
                 operate(parseInt(nums[0]),'+', parseInt(nums[1]));
+            }
+            if(displayValue.includes('-')){
+                let nums = temp.split('-');
+                operate(parseInt(nums[0]),'-', parseInt(nums[1]));
+            }
+            if(displayValue.includes('*')){
+                let nums = temp.split('*');
+                operate(parseInt(nums[0]),'*', parseInt(nums[1]));
+            }
+            if(displayValue.includes('/')){
+                let nums = temp.split('/');
+                operate(parseInt(nums[0]),'/', parseInt(nums[1]));
             }
         }
         
